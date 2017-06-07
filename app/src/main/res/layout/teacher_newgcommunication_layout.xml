@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/spinner_stddiv"
+            android:drawSelectorOnTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spineerselector"
+            android:layout_centerHorizontal="true"
+            android:dropDownVerticalOffset="40dp"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/edt_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/square"
+            android:hint="Enter Message Title"
+            android:layout_below="@+id/spinner_stddiv"
+            android:textSize="16sp"
+            android:padding="7dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter Message Descrption"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/square"
+        android:textSize="16sp"
+        android:gravity="left"
+        android:layout_below="@+id/edt_title"
+        android:id="@+id/edtnewalerts"/>
+</RelativeLayout>
+</LinearLayout>

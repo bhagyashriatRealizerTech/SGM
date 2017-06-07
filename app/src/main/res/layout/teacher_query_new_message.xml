@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_select_recipient"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/abs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="5dp"
+            android:text="To: "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/edt_select_contact"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:background="@drawable/square"
+            android:hint="Select Student"
+            android:textColorHint="@color/darkgreycolor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/imgbtnAddContact"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:background="@drawable/add_person_background"
+            android:src="@drawable/ic_add"/>
+    </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/edt_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/square"
+            android:hint="Enter Subject"
+            android:layout_below="@+id/layout_select_recipient"
+            android:textSize="16sp"
+            android:padding="7dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Message Descrption"
+            android:padding="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/square"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:layout_below="@+id/edt_title"
+            android:id="@+id/edtnewalerts"/>
+
+
+        <com.realizer.schoolgenie.managment.view.ProgressWheel
+        android:id="@+id/loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:matProg_barColor="@color/colorAccent"
+        app:matProg_progressIndeterminate="true"
+        />
+
+</RelativeLayout>

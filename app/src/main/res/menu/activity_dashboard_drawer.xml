@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_teacher"
+            android:icon="@drawable/teacherreport"
+            android:title="Teacher Report" />
+        <item
+            android:id="@+id/nav_student"
+            android:icon="@drawable/studentattendance"
+            android:title="Student Attendance" />
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/chat_drawer"
+            android:title="Communication" />
+        <item
+            android:id="@+id/nav_alert"
+            android:icon="@drawable/announcement_drawer"
+            android:title="Alerts" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_drawer"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
